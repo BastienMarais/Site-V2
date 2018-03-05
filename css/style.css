@@ -1,0 +1,41 @@
+video#bgvid {
+	position: fixed; right: 0; bottom: 0;
+	min-width: 100%; min-height: 100%;
+	width: auto; height: auto; z-index: -100;
+	background: url(../images/bg-default.png) no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) {
+	html { 
+		background: url(../images/bg-default.png) #000 no-repeat center center fixed;
+	}
+	#bgvid { 
+		display: none; 
+	}
+}
+
+h1,h2{
+	color : #50ff03 ;
+}
+
+.navbar-perso{
+	color : white ;
+	background-color: #002255;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+	background-color : #2a00ffb3 ;
+	border-radius: 15px;
+}
+
+body{
+	margin : 25px;
+	color : #00ccff ;
+}
+
+.center {
+	text-align : center;
+}
