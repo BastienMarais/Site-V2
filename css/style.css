@@ -89,14 +89,16 @@ div.c-wrapper{
 }
 
 
+
 #particles-js {
   position:fixed !important;
   top:0 !important;
   right:0 !important;
   bottom:0 !important;
   left:0 !important;
-  z-index:0 !important; 
+  z-index:0 !important;
 }
+
 
 button, input, optgroup, select, textarea {
 	background-color : rgb(121, 173, 191);
