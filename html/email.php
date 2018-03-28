@@ -107,12 +107,12 @@ if (isset($_POST['envoi']))
 		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
 		{
 			header('Location: http://bastienmarais.fr/contact-fr.html');
-  			exit();
+			echo "$message_envoye";
 		}
 		else
 		{
 			header('Location: http://bastienmarais.fr/contact-fr.html');
-  			exit();
+			echo $message_envoye;
 		};
 	}
 	else
@@ -125,6 +125,7 @@ if (isset($_POST['envoi']))
 if (($err_formulaire) || (!isset($_POST['envoi'])))
 {
   	header('Location: http://bastienmarais.fr/contact-fr.html');
+  	echo $message_non_envoye;
   	exit();
 	
 };
