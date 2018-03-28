@@ -106,37 +106,26 @@ if (isset($_POST['envoi']))
 
 		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
 		{
-			echo '<p>'.$message_envoye.'</p>';
+			header('Location: http://bastienmarais.fr/contact-fr.html');
+  			exit();
 		}
 		else
 		{
-			echo '<p>'.$message_non_envoye.'</p>';
+			header('Location: http://bastienmarais.fr/contact-fr.html');
+  			exit();
 		};
 	}
 	else
 	{
 		// une des 3 variables (ou plus) est vide ...
-		echo '<p>'.$message_formulaire_invalide.'</p>';
 		$err_formulaire = true;
 	};
 }; // fin du if (!isset($_POST['envoi']))
 
 if (($err_formulaire) || (!isset($_POST['envoi'])))
 {
-	// afficher le formulaire
-	echo '
-	<form id="contact" method="post" action="'.$form_action.'">
-	<fieldset><legend>Vos coordonnées</legend>
-		<p><label for="nom">Nom :</label><input type="text" id="nom" name="nom" value="'.stripslashes($nom).'" tabindex="1" /></p>
-		<p><label for="email">Email :</label><input type="text" id="email" name="email" value="'.stripslashes($email).'" tabindex="2" /></p>
-	</fieldset>
-
-	<fieldset><legend>Votre message :</legend>
-		<p><label for="objet">Objet :</label><input type="text" id="objet" name="objet" value="'.stripslashes($objet).'" tabindex="3" /></p>
-		<p><label for="message">Message :</label><textarea id="message" name="message" tabindex="4" cols="30" rows="8">'.stripslashes($message).'</textarea></p>
-	</fieldset>
-
-	<div style="text-align:center;"><input type="submit" name="envoi" value="Envoyer le formulaire !" /></div>
-	</form>';
+  	header('Location: http://bastienmarais.fr/contact-fr.html');
+  	exit();
+	
 };
 ?>
