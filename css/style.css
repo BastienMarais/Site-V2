@@ -103,3 +103,14 @@ div.c-wrapper{
 button, input, optgroup, select, textarea {
 	background-color : rgb(121, 173, 191);
 }
+
+.modal-content {
+	background-color: rgba(0, 77, 77, 1);
+	border-radius : 25px;
+	margin : 5px;
+	color : white;
+}
+button.close, button.close:hover {
+	color : white ;
+}
+
