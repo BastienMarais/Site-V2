@@ -108,10 +108,11 @@ button, input, optgroup, select, textarea {
 }
 
 .modal-content {
-	background-color: rgba(0, 77, 77, 1);
+	background-color: rgba(50, 50, 50, 1);
 	border-radius : 25px;
+	border : 1px solid rgb(255, 131, 6);
 	margin : 5px;
-	color : white;
+	color :rgb(255, 131, 6);
 }
 button.close, button.close:hover {
 	color : white ;
