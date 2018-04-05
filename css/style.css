@@ -1,20 +1,21 @@
 h1{
-	color : #50ff03 ;
+	color : rgb(255, 131, 6) ;
 }
 
 .name{
-	color: #ffffff ;
+	color: rgb(255, 131, 6);
+	font-weight: bold;
 }
 
 .navbar-perso{
 	color : white ;
-	background-color: #002255;
 	text-align: center;
 	border-radius: 25px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
-	background-color : rgba(0, 115, 153, 1); 
+	margin : 2px;
+	background-color : rgb(255, 131, 6);
 	border-radius: 25px;
 }
 
@@ -39,8 +40,9 @@ hr {
 }
 
 .border-2{
-	border-top : 1px solid #50ff03;
-	border-bottom : 1px solid #50ff03;
+	border-top : 1px solid rgb(255, 131, 6);
+	border-bottom : 1px solid rgb(255, 131, 6);
+	color : rgb(255, 131, 6);
 	
 }
 
@@ -58,20 +60,24 @@ hr {
 
 .nav-link:focus, .nav-link:hover {
     color : white ;
+	background-color : rgb(255, 131, 6);
+	border-radius : 25px;
+	margin : 2px;
 }
 
 .panel{
-	background-color: rgba(0, 77, 77, 0.80);
+	background-color: rgba(0, 0, 0, 0.80);
 	border-radius : 25px;
 	margin : 5px;
 }
+
 .bottom{
 	padding-bottom : 7px;
 }
 
 
 div.c-wrapper{
-	width: 100%; /* for example */
+	width: 100%; 
 	margin: auto;
 }
 
@@ -82,16 +88,16 @@ div.c-wrapper{
 .btn-perso{
 	color : white;
 	padding : 10px;
-	border-top : 1px solid green;
-	border-bottom : 1px solid green;
-	background-color : rgba(0, 100, 120, 1) ;
+	border-top : 1px solid rgb(255, 131, 6);
+	border-bottom : 1px solid rgb(255, 131, 6);
+	background-color : rgb(255, 131, 6);
 	border-radius : 15px;
 }
 
 .btn-perso:hover{
 	color : white;
 	text-decoration : none;
-	background-color : rgba(0, 140, 187, 1) ;
+	background-color : rgb(255, 169, 77) ;
 	
 }
 
